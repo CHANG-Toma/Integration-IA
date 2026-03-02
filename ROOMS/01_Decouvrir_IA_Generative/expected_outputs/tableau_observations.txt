@@ -3,27 +3,27 @@ Tableau d'observations — Room 01
 A compléter au fil des étapes de practice.md
 
 Etape 1 — Premier prompt
-  Prompt utilisé     : [votre prompt ici]
-  Réponse obtenue    : [résumez en 1-2 phrases]
-  Jugement           : [ ] correcte  [ ] incorrecte  [ ] impossible à vérifier
+  Prompt utilisé     : Qui a écrit le roman Les Fleurs du Mal ?
+  Réponse obtenue    : Le modèle indique Charles Baudelaire, recueil publié en 1857, thèmes beauté, mort, décadence.
+  Jugement           : [X] correcte  [ ] incorrecte  [ ] impossible à vérifier
 
 Etape 2 — Hallucination
-  Prompt utilisé     : [votre prompt ici]
-  Réponse obtenue    : [résumez en 1-2 phrases]
-  Jugement           : [ ] correcte  [ ] incorrecte  [ ] impossible à vérifier
-  Ce qui est faux    : [expliquez l'erreur]
+  Prompt utilisé     : Qui est l'auteur du roman 'Le Voyage des Ombres Silencieuses' publié en 1934 ?
+  Réponse obtenue    : Le modèle a répondu ne pas trouver d'information sur ce roman (livre fictif). Pas d'hallucination cette fois.
+  Jugement           : [ ] correcte  [ ] incorrecte  [X] impossible à vérifier
+  Ce qui est faux    : Le livre n'existe pas ; le modèle a correctement refusé d'inventer un auteur.
 
 Etape 3 — Comparaison de formulations
   Prompt A           : Quelle est la capitale de l'Australie ?
-  Réponse A          : [votre réponse ici]
+  Réponse A          : La capitale de l'Australie est Canberra.
   Prompt B           : Quelle est la capitale de l'Australie ? Réponds en une seule phrase.
-  Réponse B          : [votre réponse ici]
-  Différence observée: [oui/non — expliquez si oui]
+  Réponse B          : La capitale de l'Australie est Canberra.
+  Différence observée: non — la formulation (demander une seule phrase) n'a pas changé le contenu factuel, seulement la consigne de longueur ; les deux réponses sont identiques.
 
 Etape 4 — Effet de la température
-  Prompt utilisé     : [le prompt du script 02]
-  Réponse température 0   (exécution 1) : [résumez]
-  Réponse température 0   (exécution 2) : [résumez]
-  Réponse température 0.9 (exécution 1) : [résumez]
-  Réponse température 0.9 (exécution 2) : [résumez]
-  Variabilité observée : [ ] aucune  [ ] légère  [ ] forte
+  Prompt utilisé     : Décris en quelques phrases comment fonctionne la photosynthèse.
+  Réponse température 0   (exécution 1) : Processus en 5 étapes (chloroplastes, H2O/CO2, réaction glucose+O2, stockage, rejet O2).
+  Réponse température 0   (exécution 2) : Identique à l'exécution 1 (réponse déterministe).
+  Réponse température 0.9 (exécution 1) : Même thème en 3 étapes, formulation différente (pigments, chlorophylle).
+  Réponse température 0.9 (exécution 2) : Encore différente (4 puces, rubisco, « atomes de carbone »).
+  Variabilité observée : [ ] aucune  [ ] légère  [X] forte

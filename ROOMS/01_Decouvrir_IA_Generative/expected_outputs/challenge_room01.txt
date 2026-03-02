@@ -1,0 +1,37 @@
+Challenge Room 01 — Prompts qui font halluciner le modèle
+==========================================================
+
+Prompt 1 — Œuvre fictive ou mal identifiée
+-------------------------------------------
+
+1. Prompt exact utilisé :
+   Qui a écrit le roman 'L'Heure bleue' publié en 1961 ? Donne le nom de l'auteur et le résumé en une phrase.
+
+2. Réponse obtenue :
+   Le roman 'L'Heure bleue' a été écrit par Françoise Sagan.
+
+   Résumé : 'L'Heure bleue' est un roman qui suit la vie d'une jeune femme qui se sent prisonnière de son mariage et de sa vie de femme bourgeoise, et qui cherche à trouver une liberté et une authenticité perdues.
+
+3. Vérification (source externe) :
+   Françoise Sagan n'a pas publié de roman intitulé "L'Heure bleue" en 1961. Ses œuvres connues de cette période incluent notamment "Aimez-vous Brahms?" (1959), "Les Merveilleux Nuages" (1961) — pas "L'Heure bleue". Le titre "L'Heure bleue" existe (parfum Guerlain, autres œuvres) mais pas comme roman de Sagan. Le modèle a donc inventé l'attribution et le résumé.
+   Source : Wikipédia — Françoise Sagan, liste des œuvres.
+
+4. Pourquoi ce type de question piège le modèle :
+   Le titre sonne crédible et Sagan est une autrice très associée au thème (jeune femme, mariage, liberté). Le modèle comble le vide en produisant une réponse cohérente et plausible plutôt que d'admettre l'incertitude. Les questions sur des œuvres fictives ou mal identifiées poussent le LLM à « remplir » avec des patterns appris (auteur + résumé type) au lieu de vérifier l'existence du fait.
+
+
+Prompt 2 — Événement historique précis (période trouble)
+--------------------------------------------------------
+
+1. Prompt exact utilisé :
+   Qui a remporté le prix Goncourt en 1943 ? Donne le nom de l'auteur et le titre du roman lauréat.
+
+2. Réponse obtenue :
+   Le prix Goncourt en 1943 a été remporté par Henri de Montherlant pour son roman "Le Songe".
+
+3. Vérification (source externe) :
+   Le prix Goncourt n'a pas été décerné en 1943 (Seconde Guerre mondiale). "Le Songe" de Montherlant est un roman de 1922, pas un lauréat Goncourt. Le modèle a confondu ou inventé un lauréat pour une année où le prix n'a pas été attribué.
+   Source : Académie Goncourt / Wikipédia — liste des prix Goncourt ; rapport Académie française sur les concours 1943.
+
+4. Pourquoi ce type de question piège le modèle :
+   Les questions sur des dates ou événements précis dans des périodes peu représentées (guerre, coupure des données) amènent le modèle à « coller » un fait plausible (un grand nom, un titre connu) à une année donnée. Il ne distingue pas l’absence d’information de l’information erronée, et produit une réponse fausse mais crédible.
