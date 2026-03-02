@@ -10,12 +10,12 @@ Vérifiez que votre environnement est prêt :
 
 ```bash
 python --version          # doit afficher Python 3.10 ou supérieur
-python -c "import openai" # ne doit pas afficher d'erreur
+python -c "import openai"  # ne doit pas afficher d'erreur (utilisé pour l'API xAI)
 ```
 
 Vérifiez que votre fichier `.env` à la racine du dépôt contient :
 ```
-OPENAI_API_KEY=votre_cle_ici
+GROQ_API_KEY=gsk_votre_cle_groq_ici
 ```
 
 ---

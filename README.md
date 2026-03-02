@@ -25,25 +25,21 @@ A la fin de ce cours, vous serez capable de :
 - Python 3.10 ou supérieur installé sur votre machine
 - Connaissance des bases de Python (variables, fonctions, boucles, fichiers)
 - Un compte Hugging Face (gratuit) : https://huggingface.co
-- Une clé API gratuite (voir section suivante)
+- Une clé API Groq (voir section suivante)
 
 Aucune connaissance en mathématiques, statistiques ou machine learning n'est requise.
 
 ---
 
-## API gratuites — Aucun paiement nécessaire
+## API — Groq uniquement
 
-Ce cours est conçu pour fonctionner entièrement avec des API gratuites. Vous avez 3 options :
+Ce cours utilise exclusivement l'API **Groq** (gratuit, modèles Llama et Mixtral).
 
-| Option | Coût | Inscription | Avantage |
-|--------|------|------------|----------|
-| **Groq** (recommandé) | Gratuit | https://console.groq.com | Rapide, généreux en quota, modèles Llama 3 et Mixtral |
-| **Ollama** (local) | Gratuit | https://ollama.com | Aucune connexion internet nécessaire, tout tourne sur votre machine |
-| OpenAI | Payant | https://platform.openai.com | Option facultative si vous avez déjà un compte |
+| Fournisseur | Inscription | Configuration |
+|-------------|-------------|----------------|
+| **Groq** | https://console.groq.com | Créez un compte, générez une clé dans API Keys, ajoutez `GROQ_API_KEY` dans votre `.env` |
 
-**Nous recommandons Groq** : créez un compte en 2 minutes, générez une clé dans "API Keys", et tous les scripts du cours fonctionneront immédiatement.
-
-Le module `utils.py` à la racine du dépôt détecte automatiquement quelle clé est configurée et choisit le bon fournisseur. Vous n'avez rien à modifier dans le code.
+Le module `utils.py` à la racine du dépôt utilise automatiquement Groq.
 
 ---
 
@@ -63,7 +59,7 @@ Copiez le fichier d'exemple et renseignez au moins une clé :
 cp .env.example .env
 ```
 
-Puis éditez `.env` avec votre clé Groq (gratuite) :
+Puis éditez `.env` avec votre clé Groq :
 
 ```
 GROQ_API_KEY=gsk_votre_cle_groq_ici
