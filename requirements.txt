@@ -1,7 +1,8 @@
 # Dépendances Python pour le cours M1 — Intégration des systèmes d'IA générative
 # Installer avec : pip install -r requirements.txt
 
-# Appels aux LLMs via API
+# Appels aux LLMs via API (ce projet utilise Groq)
+groq>=0.18.0
 openai>=1.0.0
 mistralai>=0.4.0
 requests>=2.31.0

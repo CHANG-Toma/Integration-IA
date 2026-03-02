@@ -1,5 +1,6 @@
 # Room 01 — Découvrir l'IA générative
 
+
 ## Objectif
 
 Comprendre ce qu'est réellement un modèle de langage (LLM), sans mathématiques complexes.

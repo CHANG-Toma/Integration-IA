@@ -9,7 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 # Importation du module utilitaire qui détecte automatiquement l'API gratuite
 from utils import creer_client, MODELE
 
-# Création du client (Groq gratuit, OpenAI ou Ollama selon votre .env)
+# Création du client (Groq via votre .env)
 client = creer_client()
 
 # Définition du prompt : c'est la question ou instruction envoyée au modèle

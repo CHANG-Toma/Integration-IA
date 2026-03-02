@@ -7,7 +7,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 
 from utils import creer_client, MODELE
 
-# Création du client (API gratuite détectée automatiquement)
+# Création du client (Groq)
 client = creer_client()
 
 # Le prompt utilisé pour les deux comparaisons
