@@ -1,0 +1,14 @@
+Analyse réflexive — Room 01
+===========================
+
+1. Pourquoi le modèle peut-il affirmer quelque chose de faux sans le savoir ?
+
+Le modèle ne « sait » pas au sens où nous l'entendons : il prédit le prochain token à partir des statistiques apprises sur des textes. Il n'a pas accès à une base de faits vérifiés ni à une distinction interne entre « vrai » et « plausible ». Il peut donc produire des affirmations cohérentes et crédibles qui sont pourtant fausses (hallucinations), surtout sur des sujets rares, récents ou fictifs.
+
+2. Dans quel contexte professionnel l'hallucination serait-elle dangereuse ?
+
+Elle serait dangereuse chaque fois que la réponse est utilisée comme une information fiable sans contrôle : rédaction juridique ou médicale, conseil financier, décisions RH (CV, entretiens), synthèses pour la direction, réponses à des clients. Une affirmation inventée présentée comme un fait peut induire en erreur, engager la responsabilité de l'entreprise ou nuire à des personnes.
+
+3. Quelle précaution simple pourriez-vous prendre pour réduire ce risque ?
+
+Vérifier systématiquement les faits importants (recherche, sources officielles, relecture par un expert) et ne jamais considérer la sortie du modèle comme fiable par défaut ; pour les cas sensibles, utiliser une température basse (0 ou proche de 0), des prompts qui demandent des sources ou des formulations prudentes (« à vérifier », « selon mes connaissances »), et prévoir une validation humaine avant toute décision ou publication.

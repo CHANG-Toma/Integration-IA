@@ -10,7 +10,7 @@ Vérifiez que votre environnement est prêt :
 
 ```bash
 python --version          # doit afficher Python 3.10 ou supérieur
-python -c "import openai"  # ne doit pas afficher d'erreur (utilisé pour l'API xAI)
+python -c "import groq"     # ne doit pas afficher d'erreur (client Groq)
 ```
 
 Vérifiez que votre fichier `.env` à la racine du dépôt contient :
