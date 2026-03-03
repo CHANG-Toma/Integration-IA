@@ -1,0 +1,18 @@
+Bonnes pratiques — Utilisation d'un LLM en contexte professionnel
+=================================================================
+
+1. Toujours vérifier les informations factuelles importantes avant diffusion.
+   Justification : les LLM peuvent produire des hallucinations crédibles, et une erreur sur un chiffre, une date ou une référence peut avoir des conséquences juridiques ou business.
+
+2. Ne jamais envoyer de données personnelles ou confidentielles sans anonymisation préalable.
+   Justification : les textes transmis au modèle transitent par des serveurs externes et peuvent constituer un transfert de données non conforme au RGPD ou aux règles internes de l'organisation.
+
+3. Utiliser le LLM comme assistant de rédaction, pas comme source d'autorité.
+   Justification : le modèle aide à structurer, reformuler et générer des idées, mais la responsabilité finale du contenu publié reste celle de l'humain qui doit relire, corriger et valider.
+
+4. Définir des prompts et des garde-fous clairs alignés avec la politique de l'entreprise.
+   Justification : des instructions explicites (ton, périmètre de réponse, sujets sensibles, interdictions) réduisent les risques de réponses inadaptées, biaisées ou contraires à la stratégie de l'organisation.
+
+5. Documenter et tracer les usages du LLM pour les cas à fort enjeu.
+   Justification : conserver un historique des prompts, des réponses et des validations humaines permet d'analyser les incidents, d'améliorer les pratiques et de démontrer la diligence en cas de contrôle ou de litige.
+

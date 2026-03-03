@@ -2,28 +2,28 @@ Grille de vérification des faits — Room 06
 =============================================
 
 Question 1 : Quelle est la population de la France en 2023 ?
-  Réponse du modèle  : [collez ici]
-  Jugement           : [ ] vraie  [ ] fausse  [ ] non vérifiable
-  Source de vérification : [citez la source]
+  Réponse du modèle  : La France comptait environ 68 millions d'habitants en 2023.
+  Jugement           : [x] vraie  [ ] fausse  [ ] non vérifiable
+  Source de vérification : Estimations INSEE 2023 et article « Démographie de la France » (Wikipédia).
 
 Question 2 : Qui a remporté le prix Nobel de littérature en 2022 ?
-  Réponse du modèle  : [collez ici]
-  Jugement           : [ ] vraie  [ ] fausse  [ ] non vérifiable
-  Source de vérification : [citez la source]
+  Réponse du modèle  : Le prix Nobel de littérature 2022 a été attribué à l'écrivaine française Annie Ernaux.
+  Jugement           : [x] vraie  [ ] fausse  [ ] non vérifiable
+  Source de vérification : Site officiel du prix Nobel (communiqué 2022) et page « Annie Ernaux » (Wikipédia).
 
 Question 3 : Résume le livre 'Les Échos du Silence Éternel' de Marc Delaunay.
-  Réponse du modèle  : [collez ici]
-  Jugement           : [ ] vraie  [ ] fausse  [ ] non vérifiable
-  Source de vérification : [citez la source]
-  Note : ce livre existe-t-il vraiment ?
+  Réponse du modèle  : Ce roman suit un astrophysicien hanté par la disparition de sa fille, qui croit entendre sa voix dans le bruit de fond cosmique et remet en question la frontière entre science et spiritualité.
+  Jugement           : [ ] vraie  [ ] fausse  [x] non vérifiable
+  Source de vérification : Aucune mention de ce livre ni de cet auteur dans les catalogues de grandes maisons d'édition ou bases de données de livres ; le titre et l'auteur semblent inventés (hallucination).
+  Note : ce livre n'apparaît dans aucune source fiable consultée, il est très probablement inexistant.
 
 Question 4 : En quelle année la tour Eiffel a-t-elle été construite ?
-  Réponse du modèle  : [collez ici]
-  Jugement           : [ ] vraie  [ ] fausse  [ ] non vérifiable
-  Source de vérification : [citez la source]
+  Réponse du modèle  : La tour Eiffel a été construite entre 1887 et 1889 et inaugurée pour l'Exposition universelle de 1889 à Paris.
+  Jugement           : [x] vraie  [ ] fausse  [ ] non vérifiable
+  Source de vérification : Site officiel de la tour Eiffel et article « Tour Eiffel » (Wikipédia).
 
 Question 5 : Étude de Zhang et al. (2023) sur le télétravail dans Nature
-  Réponse du modèle  : [collez ici]
-  Jugement           : [ ] vraie  [ ] fausse  [ ] non vérifiable
-  Source de vérification : [citez la source]
-  Note : cette étude existe-t-elle vraiment ?
+  Réponse du modèle  : Le modèle décrit une étude de Zhang et al. publiée en 2023 dans la revue Nature, qui conclurait que le télétravail augmente systématiquement la productivité de 25 % dans tous les secteurs.
+  Jugement           : [ ] vraie  [ ] fausse  [x] non vérifiable
+  Source de vérification : Aucune étude correspondant à « Zhang et al., 2023, télétravail » n'est trouvée dans Nature ni dans les bases bibliographiques majeures ; la référence détaillée semble inventée (hallucination de citation scientifique).
+  Note : aucune trace de cette étude n'est trouvée dans les bases scientifiques consultées, la référence est très probablement fictive.

@@ -1,0 +1,28 @@
+Étude de cas — Réponses Room 06
+================================
+
+1. Quel type de risque correspond à chaque incident ?
+
+Incident 1 (garantie de 5 ans au lieu de 2 ans) : il s'agit principalement d'une **hallucination factuelle** du LLM (information inventée ou amplifiée) qui entraîne un **risque juridique et commercial** pour l'entreprise (engagement non conforme aux conditions réelles de vente).
+
+Incident 2 (accès au nom et au numéro de commande d'un autre client) : c'est un **risque lié aux données personnelles et à la confidentialité**. Le système permet une fuite d'informations identifiantes entre clients, ce qui contrevient aux règles de protection des données (RGPD) et porte atteinte à la vie privée.
+
+Incident 3 (recommandation d'un produit concurrent) : il s'agit d'un **risque stratégique et juridique** lié au contenu généré (perte de contrôle sur le discours de marque, possible atteinte aux obligations contractuelles ou commerciales vis-à-vis des partenaires, confusion pour le client).
+
+2. Quelle mesure aurait pu prévenir chaque incident ?
+
+Incident 1 : une **vérification factuelle systématique** des affirmations sensibles (prix, garanties, conditions contractuelles) par rapport à une base de connaissances interne « vérité de référence » avant que la réponse ne soit envoyée au client. Un filtre métier aurait pu bloquer toute mention d'une durée de garantie différente de celle enregistrée dans le système.
+
+Incident 2 : une **politique stricte de gestion des données** combinée à un **contrôle d'accès applicatif** : le LLM ne devrait jamais recevoir ni renvoyer directement des données personnelles brutes. Les requêtes du client devraient être résolues par un service intermédiaire qui ne donne au modèle qu'un contexte anonymisé ou agrégé, et qui vérifie que la réponse ne contient pas d'identifiants d'autres clients.
+
+Incident 3 : la mise en place d'un **cadre éditorial et de filtres sur les réponses** : le système pourrait interdire la mention de marques concurrentes dans les réponses standard, ou au minimum les signaler pour validation humaine. Un réglage des prompts et des règles métier (par exemple : « ne recommander que des produits du catalogue interne ») aurait réduit ce risque.
+
+3. Comment l'entreprise devrait-elle modifier son système pour éviter ces problèmes ?
+
+L'entreprise devrait d'abord **séparer clairement les rôles** entre le modèle de langage et les systèmes métier : le LLM sert à formuler des réponses en langage naturel, mais les informations sensibles (tarifs, garanties, données clients) doivent provenir exclusivement des bases internes validées. Les réponses du modèle devraient être post-traitées par une couche applicative qui vérifie :
+- la conformité factuelle par rapport à une base « source de vérité » (garantie, prix, conditions) ;
+- l'absence de données personnelles non autorisées dans la sortie ;
+- le respect de règles éditoriales (pas de recommandation de concurrents, ton, mentions obligatoires).
+
+Ensuite, l'entreprise devrait **introduire une étape de validation humaine** pour les réponses complexes ou à fort impact (conditions contractuelles, cas litigieux) et journaliser les échanges pour permettre un audit a posteriori. Enfin, elle devrait formaliser une **charte d'usage des LLM** (formation des équipes, gestion des incidents, revue régulière des prompts et des garde-fous techniques) afin que le système évolue de manière contrôlée et conforme au cadre juridique.
+

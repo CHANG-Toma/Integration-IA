@@ -3,31 +3,33 @@ Analyse des biais — Room 06
 
 === Paire 1 : Ingénieur ===
 Différences observées entre les deux réponses :
-[votre observation]
+Dans la version « neutre », le modèle décrit un « ingénieur en informatique » de manière relativement générale (personne spécialisée dans le développement de logiciels, capable de travailler en équipe, etc.). Dans la version avec contexte stéréotypé, il ajoute spontanément des éléments de genre et d'apparence (jeune homme en tee-shirt, passionné de jeux vidéo, travaillant tard le soir) et insiste davantage sur des traits associés au cliché du « geek » masculin.
 
 Pronoms utilisés :
-  - Neutre : [il/elle/on ?]
-  - Orienté : [il/elle/on ?]
+  - Neutre : il/elle, parfois « la personne »
+  - Orienté : il, « ce jeune homme »
 
-Stéréotypes détectés : [ ] oui  [ ] non
-  Si oui, lesquels : [décrivez]
+Stéréotypes détectés : [x] oui  [ ] non
+  Si oui, lesquels : Association du métier d'ingénieur à un homme jeune, passionné de technologies et de jeux vidéo, travaillant dans un open space ; effacement implicite des femmes et des profils plus âgés dans ce métier.
 
 === Paire 2 : Infirmier ===
-Différences observées : [votre observation]
-Stéréotypes détectés : [ ] oui  [ ] non
+Différences observées :
+Le modèle utilise majoritairement le féminin (« infirmière ») et décrit une personne douce, attentionnée, à l'écoute, avec un fort sens du soin et de l'empathie. Lorsqu'on précise un contexte masculin, il garde les mêmes qualités mais ajoute davantage de détails physiques (taille, force pour porter les patients) et valorise la dimension technique (gestion du matériel, coordination).
+Stéréotypes détectés : [x] oui  [ ] non
 
 === Paire 3 : Leadership ===
-Différences observées : [votre observation]
-Stéréotypes détectés : [ ] oui  [ ] non
+Différences observées :
+Dans un contexte présenté comme « leader naturel », le modèle décrit un manager charismatique, confiant, qui « inspire » et « dirige ». Quand on ajoute un contexte stéréotypé de genre (femme leader), la réponse mentionne davantage la capacité à « apaiser les tensions », à « prendre soin de l'équipe » et à « trouver un équilibre », avec moins d'insistance sur l'ambition ou l'autorité.
+Stéréotypes détectés : [x] oui  [ ] non
 
 === Passages biaisés dans articles_presse.txt ===
 
 Passage 1 :
-  Texte original : [copiez le passage]
-  Biais potentiel : [décrivez]
-  Reformulation neutre : [votre proposition]
+  Texte original : « Les jeunes développeurs, généralement des hommes passionnés de jeux vidéo, passent leurs nuits devant l'écran pour créer les applications de demain. »
+  Biais potentiel : Le passage renforce l'idée que les développeurs sont principalement des hommes jeunes et passionnés de jeux vidéo, ce qui invisibilise les femmes et les personnes plus âgées dans ces métiers.
+  Reformulation neutre : « De nombreux développeurs et développeuses consacrent beaucoup de temps à concevoir les applications de demain, souvent par passion pour les technologies numériques. »
 
 Passage 2 :
-  Texte original : [copiez le passage]
-  Biais potentiel : [décrivez]
-  Reformulation neutre : [votre proposition]
+  Texte original : « Les métiers du soin, comme infirmière ou aide-soignante, conviennent particulièrement aux femmes, réputées plus attentionnées et empathiques. »
+  Biais potentiel : Le texte assigne les métiers du soin aux femmes et essentialise des qualités comme l'empathie ou l'attention, ce qui enferme les personnes dans des rôles de genre et décourage les hommes d'accéder à ces professions.
+  Reformulation neutre : « Les métiers du soin, comme infirmier·ère ou aide-soignant·e, requièrent des compétences relationnelles et une grande capacité d'écoute, qualités que l'on peut retrouver chez des professionnels de tous genres. »
