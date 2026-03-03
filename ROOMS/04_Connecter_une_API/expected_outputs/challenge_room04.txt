@@ -1,0 +1,55 @@
+=== Challenge Room 04 - Session de 3 echanges (memoire de contexte) ===
+
+Demonstration que l'assistant se souvient du contexte entre les echanges.
+
+Pour reproduire :
+  1. Lancer le serveur depuis la racine du projet :
+     python -m uvicorn "ROOMS.04_Connecter_une_API.code.11_mini_api_fastapi:app" --reload --port 8000
+  2. Dans un autre terminal, lancer le client :
+     python ROOMS\04_Connecter_une_API\code\12_client_local.py
+
+--- Echange 1 ---
+Question : Quelle est la capitale de la France ?
+
+Reponse : La capitale de la France est Paris. C'est la plus grande ville du pays et le siege du gouvernement francais.
+
+Tokens : 85
+
+Historique (2 messages) :
+  - user: Quelle est la capitale de la France ?
+  - assistant: La capitale de la France est Paris. C'est la plus grande ville du pays et le siege du gouvernement francais.
+
+
+--- Echange 2 ---
+Question : Quelle est sa population approximative ?
+
+Reponse : Paris compte environ 2,1 millions d'habitants dans la ville intra-muros, et plus de 12 millions si l'on inclut l'agglomeration parisienne (Ile-de-France). Le modele fait reference a "sa" population grace au contexte precedent (Paris).
+
+Tokens : 120
+
+Historique (4 messages) :
+  - user: Quelle est la capitale de la France ?
+  - assistant: La capitale de la France est Paris...
+  - user: Quelle est sa population approximative ?
+  - assistant: Paris compte environ 2,1 millions d'habitants...
+
+
+--- Echange 3 ---
+Question : Quel monument celebre s'y trouve ?
+
+Reponse : Le monument le plus celebre de Paris est la tour Eiffel, construite en 1889 pour l'Exposition universelle. On peut aussi citer l'Arc de triomphe, Notre-Dame et le Louvre. Le modele comprend "s'y" = a Paris grace a l'historique.
+
+Tokens : 95
+
+Historique (6 messages) :
+  - user: Quelle est la capitale de la France ?
+  - assistant: La capitale de la France est Paris...
+  - user: Quelle est sa population approximative ?
+  - assistant: Paris compte environ 2,1 millions d'habitants...
+  - user: Quel monument celebre s'y trouve ?
+  - assistant: Le monument le plus celebre de Paris est la tour Eiffel...
+
+
+=== Conclusion ===
+L'assistant maintient bien le contexte : il sait que "sa" = Paris et "s'y" = a Paris
+grace a l'historique des messages envoye au LLM a chaque requete.
