@@ -1,0 +1,99 @@
+=== Démonstration — Assistant de recherche documentaire (Room 08) ===
+
+Contexte :
+- Le corpus `datasets/rapport_fictif.pdf` a été indexé au préalable avec :
+    python code/indexation_corpus.py
+- L'assistant est lancé avec :
+    python code/assistant_recherche_documentaire.py
+
+------------------------------------------------------------
+Lancement de l'assistant
+------------------------------------------------------------
+
+=== Assistant de recherche documentaire (RAG) ===
+Posez vos questions sur le rapport indexé.
+Commandes spéciales :
+  - 'quitter' : terminer la session
+  - 'rapport' : générer un rapport d'utilisation à partir des logs
+
+Question : Quels sont les objectifs principaux décrits dans le rapport ?
+
+--- Passages de contexte utilisés (aperçu) ---
+[1] Ce rapport présente les objectifs principaux du projet : améliorer la qualité du service...
+[2] Un des objectifs centraux est de structurer la démarche d'innovation autour de quelques...
+[3] Le rapport insiste enfin sur l'importance de la mesure d'impact et du suivi des indicateurs...
+
+--- Réponse ---
+Les objectifs principaux du rapport sont de clarifier la vision du projet, d'améliorer la
+qualité du service rendu aux utilisateurs et de structurer la démarche d'innovation.
+Le document explique que le projet vise à mettre en place un cadre méthodologique
+cohérent, avec des étapes clairement définies, ainsi qu'un suivi d'indicateurs pour
+mesurer l'impact des actions mises en œuvre. Il insiste également sur l'importance
+de la collaboration entre les différentes parties prenantes.
+
+(Temps de réponse : 1.842 s, tokens estimés : 215)
+
+------------------------------------------------------------
+Interaction 2 — Question plus précise
+------------------------------------------------------------
+
+Question : Quels indicateurs de suivi sont mentionnés ?
+
+--- Passages de contexte utilisés (aperçu) ---
+[1] Parmi les indicateurs de suivi proposés, on trouve : le taux de satisfaction des...
+[2] L'équipe projet suit également la fréquence d'utilisation des nouveaux services...
+[3] Un tableau de bord rassemble ces indicateurs et permet de visualiser l'évolution...
+
+--- Réponse ---
+Le rapport mentionne plusieurs indicateurs de suivi, notamment :
+- le taux de satisfaction des utilisateurs,
+- la fréquence d'utilisation des nouveaux services,
+- des indicateurs de performance opérationnelle (délais de traitement, nombre de demandes traitées),
+- et un tableau de bord permettant de visualiser l'évolution de ces mesures dans le temps.
+Ces indicateurs servent à évaluer l'impact réel du projet et à ajuster les actions si nécessaire.
+
+(Temps de réponse : 1.665 s, tokens estimés : 187)
+
+------------------------------------------------------------
+Interaction 3 — Cas hors sujet / limite
+------------------------------------------------------------
+
+Question : Quelle est la météo prévue à Paris demain ?
+
+--- Passages de contexte utilisés (aperçu) ---
+[1] Ce rapport traite exclusivement d'un projet interne et ne fournit aucune information...
+[2] Les annexes détaillent la méthodologie de conduite de projet, mais ne contiennent pas...
+[3] Le rapport ne couvre pas de données externes comme la météo ou les marchés financiers...
+
+--- Réponse ---
+Le rapport dont je dispose ne contient aucune information sur la météo ou des données
+externes similaires. Il traite uniquement d'un projet interne et de sa mise en œuvre.
+Je ne peux donc pas répondre à votre question à partir de ce document.
+
+(Temps de réponse : 1.421 s, tokens estimés : 129)
+
+------------------------------------------------------------
+Génération du rapport d'utilisation
+------------------------------------------------------------
+
+Question : rapport
+
+=== Rapport d'utilisation de l'assistant de recherche documentaire ===
+
+Nombre total de requêtes      : 3
+Temps de réponse moyen (s)    : 1.643
+Temps de réponse min / max (s): 1.421 / 1.842
+Tokens estimés moyens         : 177.0
+
+Fichier de journal analysé    : code/logs/journal_sessions.csv
+
+Ce rapport est une estimation basée sur le comptage de mots et ne doit pas être
+interprété comme une mesure exacte des tokens facturés par le fournisseur.
+
+------------------------------------------------------------
+Fin de la session
+------------------------------------------------------------
+
+Question : quitter
+Au revoir.
+

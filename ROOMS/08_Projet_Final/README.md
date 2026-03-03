@@ -7,6 +7,7 @@ Concevoir et réaliser un projet complet qui intègre l'ensemble des compétence
 ## Résultat attendu
 
 Un système fonctionnel documenté, livré avec :
+
 - Des scripts Python exécutables
 - Un fichier `requirements.txt`
 - Un rapport structuré
@@ -24,9 +25,12 @@ Choisissez l'un des cas suivants ou proposez le vôtre (soumis à validation) :
 
 ## Fichiers de cette Room
 
-| Fichier | Contenu |
-|---------|---------|
-| `theory.md` | Rappels et conseils d'intégration |
-| `practice.md` | Consignes détaillées du projet final |
-| `challenge.md` | Extensions possibles |
-| `rubric.md` | Critères d'évaluation détaillés |
+
+| Fichier        | Contenu                              |
+| -------------- | ------------------------------------ |
+| `theory.md`    | Rappels et conseils d'intégration    |
+| `practice.md`  | Consignes détaillées du projet final |
+| `challenge.md` | Extensions possibles                 |
+| `rubric.md`    | Critères d'évaluation détaillés      |
+
+
