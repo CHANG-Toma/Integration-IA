@@ -17,7 +17,7 @@ Tokens : 85
 
 Historique (2 messages) :
   - user: Quelle est la capitale de la France ?
-  - assistant: La capitale de la France est Paris. C'est la plus grande ville du pays et le siege du gouvernement francais.
+  - assistant: La capitale de la France est Paris.
 
 
 --- Echange 2 ---
