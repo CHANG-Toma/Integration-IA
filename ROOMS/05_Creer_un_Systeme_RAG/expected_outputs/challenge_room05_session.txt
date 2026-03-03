@@ -1,0 +1,38 @@
+=== Challenge Room 05 - Session RAG (fichier : datasets/texte_entreprise.txt) ===
+
+Commande : python challenge_room05.py datasets/texte_entreprise.txt
+
+--- Question 1 ---
+Question : Quel est le chiffre d'affaires de TechVision et quel est l'objectif 2025 ?
+
+Passages sources utilisés :
+  [1] L'objectif principal pour 2025 est d'augmenter le chiffre d'affaires de 15 % pour atteindre 9,8 millions d'euros. Pour y parvenir, trois axes ont été définis. Le premier axe est le développement du produit phare MedTrack vers le marché européen...
+  [2] TechVision SAS est une entreprise française fondée en 2018, spécialisée dans le développement de solutions logicielles pour le secteur de la santé. L'entreprise emploie 120 collaborateurs répartis entre le siège de Lyon et un bureau secondaire à Nantes. Le chiffre d'affaires annuel s'élève à 8,5 millions d'euros en 2024...
+  [3] Trois projets majeurs sont en cours de développement. Le projet MedTrack v3.0 introduit un module d'intelligence artificielle pour la prédiction des réadmissions hospitalières, avec une mise en production prévue en juin 2025...
+
+Réponse : En 2024, le chiffre d'affaires de TechVision s'élève à 8,5 millions d'euros. L'objectif pour 2025 est de l'augmenter de 15 % pour atteindre 9,8 millions d'euros, via le développement de MedTrack en Europe, le renforcement de l'équipe commerciale et l'amélioration de la satisfaction client.
+
+
+--- Question 2 ---
+Question : Quels sont les risques identifiés ?
+
+Passages sources utilisés :
+  [1] Trois risques majeurs ont été identifiés par le comité de direction. Le premier risque est la dépendance au fournisseur cloud Amazon Web Services (AWS), qui héberge 90 % de l'infrastructure. Une migration partielle vers un fournisseur européen (OVHcloud) est prévue pour le deuxième semestre 2025. Le deuxième risque est la pénurie de développeurs seniors...
+  [2] L'objectif principal pour 2025 est d'augmenter le chiffre d'affaires de 15 % pour atteindre 9,8 millions d'euros...
+  [3] Le troisième risque est réglementaire : l'entrée en vigueur du règlement européen sur l'IA (AI Act) impose de nouvelles obligations de conformité pour les logiciels de santé...
+
+Réponse : Trois risques majeurs sont identifiés : (1) la dépendance à AWS qui héberge 90 % de l'infrastructure, avec une migration partielle vers OVHcloud prévue au 2e semestre 2025 ; (2) la pénurie de développeurs seniors sur le marché français ; (3) le risque réglementaire lié à l'AI Act et aux obligations de conformité pour les logiciels de santé.
+
+
+--- Question 3 ---
+Question : Quels sont les trois projets en cours et le budget ?
+
+Passages sources utilisés :
+  [1] Trois projets majeurs sont en cours de développement. Le projet MedTrack v3.0 introduit un module d'intelligence artificielle pour la prédiction des réadmissions hospitalières, avec une mise en production prévue en juin 2025. Le projet DataBridge est une plateforme d'interopérabilité permettant aux hôpitaux de connecter leurs systèmes d'information existants. Le projet SecureHealth renforce la sécurité des données patients conformément au RGPD et à la directive NIS2. Le budget total alloué à ces trois projets est de 2,1 millions d'euros.
+  [2] Le département R&D est dirigé par Marie Leclerc et utilise une méthodologie agile avec des sprints de deux semaines...
+  [3] L'objectif principal pour 2025 est d'augmenter le chiffre d'affaires de 15 % pour atteindre 9,8 millions d'euros...
+
+Réponse : Les trois projets en cours sont : (1) MedTrack v3.0 — module IA pour la prédiction des réadmissions hospitalières, mise en production prévue juin 2025 ; (2) DataBridge — plateforme d'interopérabilité pour les systèmes d'information des hôpitaux ; (3) SecureHealth — renforcement de la sécurité des données patients (RGPD, NIS2). Le budget total alloué à ces trois projets est de 2,1 millions d'euros.
+
+
+=== Fin de session (commande : quitter) ===
