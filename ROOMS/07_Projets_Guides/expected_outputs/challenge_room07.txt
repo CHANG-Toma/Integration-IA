@@ -1,0 +1,28 @@
+Extension réalisée : Option A — Assistant mémoire avec résumé automatique
+
+- Fonctionnalité :
+  - Quand l'historique dépasse 10 échanges, les 5 premiers échanges sont résumés
+    automatiquement par le modèle en un seul message de synthèse.
+  - Ce résumé est injecté au début de l'historique (après le message système)
+    pour conserver une mémoire longue tout en limitant la taille du contexte.
+
+- Détails d’implémentation :
+  - La logique est implémentée dans la fonction `ajouter_au_contexte()` du fichier
+    `code/projet_a/assistant_memoire.py`.
+  - Le script construit un texte reprenant les 5 premiers échanges (rôles + contenus),
+    puis appelle le LLM pour produire un résumé en français (5–8 phrases).
+  - L’historique est reconstruit avec :
+      1. le message système initial ;
+      2. un message système contenant le résumé ;
+      3. le reste de l’historique (échanges récents détaillés).
+  - En cas d’erreur d’API ou de réponse vide, le script revient au comportement simple :
+    suppression des 2 messages les plus anciens après le message système.
+
+- Résultats observés (à compléter) :
+  - Description de quelques sessions de test (au moins 2 conversations de 12–15 échanges).
+  - Qualité du résumé : les informations importantes des débuts de conversation sont-elles
+    bien conservées ?
+  - Impact sur le comportement de l’assistant : semble-t-il encore “se souvenir” des
+    premiers sujets abordés grâce au résumé ?
+  - Estimation du coût en tokens avant / après introduction du résumé (approximative).
+
